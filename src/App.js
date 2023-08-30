@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import "./App.css";
+
+import TripList from "./components/TripList/index.js";
 
 function App() {
+  // let [show, setShow] = useState(true);
+
+  let [data,setData] = useState('my data');
+
+  let myFunction  = ()=>{
+    setData ("update data ");
+  }
+
+  useEffect(()=>{
+    myFunction()
+    console.log("running");
+  },[myFunction])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TripList />
+    // <>
+    //   <button onClick={() => setShow(!show)}>hide trips</button>
+    //   { show && <TripList />}
+    // </>
   );
 }
 

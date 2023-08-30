@@ -1,0 +1,30 @@
+{
+  "trips": [
+    {
+      "name": "2 nights in ngwesaung",
+      "price": 100000,
+      "id": 1,
+      "location": "Myanmar"
+    },
+    {
+      "name": "2 nights in Kalaw",
+      "price": 200000,
+      "id": 2,
+      "location": "Myanmar"
+
+    },
+    {
+      "name": "3 nights in Ngapali",
+      "price": 400000 ,
+      "id": 3,
+      "location": "Myanmar"
+    },
+    {
+        "name": "3 nights in Bangkok",
+        "price": 600000 ,
+        "id": 4,
+        "location": "Thai"
+  
+      }
+  ]
+}
